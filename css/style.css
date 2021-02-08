@@ -127,8 +127,9 @@
         font-size: 9vw;
         font-weight: 900;
         line-height: 1;
-        letter-spacing: -5;
-
+word-break: keep-all;
+        word-spacing: 0vw;
+        letter-spacing: -0.2vw;
     }
 
     .swiper-slide:first-child .text02 {
@@ -140,13 +141,15 @@
         color: rgba(255, 255, 255, 0);
         -webkit-text-stroke: 1px #000;
         line-height: 1;
-        letter-spacing: -2;
+word-break: keep-all;
+        word-spacing: 0vw;
         margin-left: 1vw;
 
     }
 
     .swiper-slide:nth-child(2) .slide-area .slidebg {
         background: url(../img/main/cat.jpg) no-repeat center center;
+        background-size: cover;
     }
 
     .swiper-slide:nth-child(3) .slide-area .slidebg {
@@ -184,3 +187,4 @@
     .swiper-slide:nth-child() .slide-area .slidebg {
         background-color: rebeccapurple;
     }
+
