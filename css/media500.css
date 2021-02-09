@@ -3,6 +3,10 @@
         display: none;
     }
 
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
     .swiper-slide {
         width: 51vw;
         height: 76vw;
