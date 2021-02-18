@@ -50,7 +50,7 @@
     }
 
     .swiper-slide:first-child .text02 {
-        transform: translateY(200%);
+        transform: translateY(205%);
         font-size: 9.8vw;
         font-weight: 700;
         word-break: keep-all;
