@@ -37,7 +37,7 @@
     .swiper-slide:first-child {
         width: 40%;
         height: 100%;
-        margin-left: -42vw;
+        margin-left: -46vw;
         margin-right: 0vw;
     }
 
@@ -58,7 +58,7 @@
     }
 
     .swiper-slide:nth-child(2) {
-        margin-left: 7vw;
+        margin-left: 14vw;
 
     }
 
