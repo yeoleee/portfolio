@@ -71,14 +71,14 @@
 
 .swiper-slide:first-child {
     width: 90%;
-    margin-left:0;
+    margin-left:-2vw;
     text-align: left;
     
 }
 
 .swiper-slide:nth-child(2) {
     margin-top: 0;
-    margin-left:-18vw;
+    margin-left:-12vw;
 }
 
 .swiper-slide:nth-child(3) {
@@ -220,7 +220,6 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
     letter-spacing: 0;
