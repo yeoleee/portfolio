@@ -22,18 +22,39 @@
             border: 1px solid #000;
         }
 
+        .logo-position {
+            position: absolute;
+            top: 36px;
+            left: 36px;
+            z-index: 20;
+            border: 1px solid #000;
+            width: 180px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .menu-position {
+            position: absolute;
+            top: 36px;
+            right: 36px;
+            z-index: 20;
+            border: 1px solid #000;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
         .swiper-container {
             width: 100%;
             height: 100%;
         }
-
         .slide-title {
             position: absolute;
             top: 40%;
             transform: translateY(-60%) scale3d(1, 1, 1);
-            right: -10vw;
+            right: -12vw;
             color: #000;
-            font-size: 4.2vw;
+            font-size: 3.5vw;
             font-weight: 900;
             overflow: hidden;
             letter-spacing: -2;
@@ -44,12 +65,11 @@
         .slide-stitle {
             position: absolute;
             transform: translateY(-50%) scale3d(1, 1, 1);
-            top: 70%;
-            right: -10vw;
+            top: 65%;
+            right: -12vw;
             height: 3vw;
             overflow: hidden;
             display: inline-table;
-            letter-spacing: -1;
             z-index: 2;
             transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
         }
@@ -69,7 +89,8 @@
             margin-left: 1.2vw;
             color: #000;
             font-size: 1vw;
-            line-height: 1;
+            line-height: 1.3;
+            letter-spacing: -1;
             display: table-cell;
             vertical-align: middle;
 
@@ -109,6 +130,7 @@
             opacity: 0.6;
         }
 
+
         .slide-area:hover .slide-title,
         .slide-area:hover .slide-stitle {
             transform: scale3d(1.04, 1.04, 1.04);
@@ -135,7 +157,7 @@
 
         .swiper-slide:first-child .text02 {
             position: absolute;
-            bottom: 50%;
+            bottom: 52%;
             transform: translateY(160%);
             font-size: 4.6vw;
             font-weight: 700;
@@ -147,6 +169,26 @@
             margin-left: 1vw;
 
         }
+
+        .years {
+            position: absolute;
+            width: 100%;
+            z-index: 20;
+            left: -12.5vw;
+            top: 30%;
+            color: #000;
+            font-size: 1.2vw;
+            font-weight: 500;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .slide-area:hover .years {
+            top:24%;
+            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
 
         .swiper-slide:nth-child(2) .slide-area .slidebg {
             background: url(../img/main/cat.jpg) no-repeat center center;

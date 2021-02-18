@@ -1,4 +1,19 @@
 @media screen and (max-width: 500px) {
+
+    @import url ('https://fonts.googleapis.com/css2? family = Noto + Sans + KR : wght @ 100; 300; 400; 500; 700; 900 & display = swap');
+
+    html,
+    body {
+        position: relative;
+        height: 100%;
+        background: #eee;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
     #cousor-ball {
         display: none;
     }
@@ -13,10 +28,15 @@
         margin-right: 12vw;
     }
 
+    .years {
+        left: -30vw;
+        top: 26%;
+        font-size: 3.4vw;
+    }
+
     .swiper-slide:first-child {
         width: 40%;
         height: 100%;
-        margin-left: -38vw;
         margin-right: 0;
     }
 

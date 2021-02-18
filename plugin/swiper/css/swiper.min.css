@@ -62,7 +62,7 @@
     width: 21vw ;
     height: 28vw;
     position: relative;
-    top: 45%;
+    top: 50%;
     left: 0;
     transform: translate(0%, -50%);
     transition-property: transform;
@@ -415,7 +415,7 @@ button.swiper-pagination-bullet {
     width: 60%;
     height: 2px;
     left: 50%;
-    bottom: 10%;
+    bottom: 7%;
     transform: translate(-50%, -50%);
 }
 
