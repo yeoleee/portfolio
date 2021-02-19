@@ -23,36 +23,36 @@
     }
 
     .swiper-slide {
-        width: 33vw;
-        height: 44vw;
+        width: 30vw;
+        height: 40vw;
         margin-right: 6vw;
     }
 
     .years {
-        left: -19vw;
+        left: -17vw;
         top: 30%;
         font-size: 2vw;
     }
 
     .swiper-slide:first-child {
-        width: 40%;
+        width: 36%;
         height: 100%;
-        margin-left: -50vw;
+        margin-left: -54vw;
         margin-right: 0vw;
     }
 
     .swiper-slide:first-child .text01 {
         top: 60%;
         transform: translateY(-100%);
-        font-size: 11.4vw;
+        font-size: 10.5vw;
         font-weight: 900;
         word-break: keep-all;
-        word-spacing: -1vw;
+        word-spacing: 0vw;
     }
 
     .swiper-slide:first-child .text02 {
         transform: translateY(210%);
-        font-size: 6.5vw;
+        font-size: 5.6vw;
         font-weight: 700;
         word-break: keep-all;
     }
@@ -65,10 +65,11 @@
     .slide-title {
         right: -16vw;
         font-size: 5vw;
+        top: 38%;
     }
 
     .slide-stitle {
-        top: 64%;
+        top: 68%;
         right: -15vw;
     }
 
@@ -80,7 +81,8 @@
 
     .slide-stitle p {
         margin-left: 1.2vw;
-        font-size: 1.6vw;
+        font-size: 1.4vw;
+        letter-spacing: -0.1vw;
 
 
 
