@@ -88,3 +88,21 @@
 
     }
 }
+
+@media screen and (min-width:641px) and (max-width:768px) {
+        .swiper-slide:first-child .text01 {
+        top: 58%;
+        transform: translateY(-100%);
+        font-size: 12vw;
+        font-weight: 900;
+        word-break: keep-all;
+        word-spacing: 0vw;
+    }
+
+    .swiper-slide:first-child .text02 {
+        transform: translateY(220%);
+        font-size:6.4vw;
+        font-weight: 700;
+        word-break: keep-all;
+    }
+}
