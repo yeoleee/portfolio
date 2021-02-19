@@ -1,0 +1,93 @@
+@media screen and (max-width: 640px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+    html,
+    body {
+        position: relative;
+        height: 100%;
+        background: #eee;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #cousor-ball {
+        display: none;
+    }
+
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .swiper-slide {
+        width: 48vw;
+        height: 72vw;
+        margin-right: 12vw;
+    }
+
+    .years {
+        left: -30vw;
+        top: 26%;
+        font-size: 3.4vw;
+    }
+
+    .swiper-slide:first-child {
+        width: 40%;
+        height: 100%;
+        margin-right:0;
+        margin-left: -48vw;
+    }
+
+    .swiper-slide:first-child .text01 {
+        top: 58%;
+        transform: translateY(-100%);
+        font-size: 16vw;
+        font-weight: 900;
+        word-break: keep-all;
+        word-spacing: -1vw;
+    }
+
+    .swiper-slide:first-child .text02 {
+        transform: translateY(195%);
+        font-size: 9.4vw;
+        font-weight: 700;
+        word-break: keep-all;
+    }
+
+    .swiper-slide:nth-child(2) {
+        margin-left: 30vw;
+        margin-top: 0vw;
+    }
+
+    .slide-title {
+        right: -14vw;
+        font-size: 8vw;
+    }
+
+    .slide-stitle {
+        top: 64%;
+        right: -14vw;
+    }
+
+    .h-line {
+        width: 12vw;
+        margin-right: 3vw;
+
+    }
+
+    .slide-stitle p {
+        margin-left: 1.2vw;
+        font-size: 3vw;
+
+
+
+    }
+}

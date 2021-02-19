@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="plugin/swiper/css/swiper.min.css">
     <link href="css/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/media768.css">
-    <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/media500.css">
+    <link rel="stylesheet" media="screen and (min-width:641px) and (max-width:1023px)" href="css/media1024.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="css/media640.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 </head>
 
 <body>
-    <div id="cousor-ball"></div>
+    <header>
     <div class="logo-position">로고영역</div>
     <div class="menu-position">메뉴</div>
+    </header>
+    
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -37,7 +39,7 @@
                     <h1 class="slide-title">한국임업진흥원</h1>
                     <div class="slide-stitle">
                         <div class="h-line"></div>
-                        <p> 구축 및 운영 유지보수</p>
+                        <p>운영 유지보수 및<br>포털, 서비스페이지 구축</p>
                     </div>
                     <div class="slidebg"></div>
                 </a></div>
@@ -55,7 +57,7 @@
                     <h1 class="slide-title">오토앤 주식회사</h1>
                     <div class="slide-stitle">
                         <div class="h-line"></div>
-                        <p>자사몰 및 협력사몰 디자인</p>
+                        <p>자사몰 및 협력사몰 구축</p>
                     </div>
                     <div class="slidebg"></div>
                 </a></div>
@@ -119,6 +121,7 @@
         <div class="swiper-pagination"></div>
     </div>
 
+   
     <!-- Swiper JS -->
     <script src="plugin/swiper/js/swiper.min.js"></script>
 
@@ -135,7 +138,7 @@
                 type: 'progressbar',
             },
         });
-
+//       $(function(){$("#")})
         function resultFun(x) {
             var positionLeft = x.clientX;
             var positionTop = x.clientY;

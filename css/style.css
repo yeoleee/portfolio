@@ -9,7 +9,6 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 #cousor-ball {
@@ -22,11 +21,20 @@ body {
     border: 1px solid #000;
 }
 
-.logo-position {
-    position: absolute;
-    top: 36px;
-    left: 36px;
+header {
+    position: fixed;
+    background-color: rgba(238, 238, 238, 1);
+    top: 0;
     z-index: 20;
+    padding: 20px 36px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.logo-position {
+    float: left;
     border: 1px solid #000;
     width: 180px;
     height: 50px;
@@ -34,15 +42,16 @@ body {
 }
 
 .menu-position {
-    position: absolute;
-    top: 36px;
-    right: 36px;
-    z-index: 20;
+    float: right;
+    display: inline-block;
     border: 1px solid #000;
     width: 50px;
     height: 50px;
     text-align: center;
 }
+
+
+/* main page */
 
 .swiper-container {
     width: 100%;
@@ -160,10 +169,10 @@ body {
     position: absolute;
     bottom: 52%;
     transform: translateY(160%);
-    font-size: 4.6vw;
+    font-size: 5.2vw;
     font-weight: 700;
     color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1.5px #000;
     line-height: 1;
     word-break: keep-all;
     word-spacing: 0vw;
@@ -230,4 +239,103 @@ body {
 
 .swiper-slide:nth-child() .slide-area .slidebg {
     background-color: rebeccapurple;
+}
+
+
+
+
+/* project_list */
+
+.back_list {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 21;
+    border: 1px solid #000;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 0 36px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 132px;
+}
+
+.project_title {
+    position: inherit;
+    float: left;
+    width: auto;
+    padding-left: 2vw;
+    box-sizing: border-box;
+}
+
+.project_title span {
+    float: left;
+    font-size: 2vw;
+    font-weight: 900;
+    color: rgba(0, 0, 05, 1);
+    letter-spacing: 0.1vw;
+    writing-mode: vertical-rl;
+
+}
+
+.project_title h1 {
+    float: left;
+    font-size: 6.5vw;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1.5px #000;
+    line-height: 0;
+    letter-spacing: 0.5vw;
+    writing-mode: vertical-rl;
+}
+
+.workbox_wrap {
+    float: right;
+    width: 85%;
+    text-align: right;
+
+}
+
+.workbox_wrap ul {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.workbox_wrap ul li {
+    width: 32vw;
+    height: inherit;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 0 0 2vw 2vw;
+    text-align: left;
+}
+
+.workbox_wrap ul li span {
+    font-weight: 600;
+}
+
+.workbox_wrap ul li div {
+    width: 32vw;
+    height: 24vw;
+    border: 1px solid #000;
+
+}
+
+.workbox_wrap ul li:first-child div {
+
+
+}
+
+.workbox_wrap ul li:nth-child(2) div {
+
 }
