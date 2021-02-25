@@ -316,12 +316,11 @@ main {
     color: rgba(0, 0, 05, 1);
     letter-spacing: 0.1vw;
     writing-mode: vertical-rl;
-    display: inline-block;
 
 }
 
 .project_title h1 {
-    float: left;
+    float: right;
     font-size: 5.9vw;
     font-weight: 900;
     color: rgba(255, 255, 255, 0);
@@ -329,14 +328,13 @@ main {
     line-height: 0;
     letter-spacing: 0.5vw;
     writing-mode: vertical-rl;
-    display: inline-block;
-height: 900px;
+    ;height: 900px;
 }
 
 .workbox_wrap {
     position: relative;
     float: right;
-    width: 82%;
+    width: 75%;
     text-align: right;
     z-index: 1;
 }
