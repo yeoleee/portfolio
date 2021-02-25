@@ -1,6 +1,6 @@
 @media screen and (min-width:641px) and (max-width:1024px) {
-
-    @import url ('https://fonts.googleapis.com/css2? family = Noto + Sans + KR : wght @ 100; 300; 400; 500; 700; 900 & display = swap');
+    
+    
 
     html,
     body {
@@ -11,7 +11,6 @@
         color: #000;
         margin: 0;
         padding: 0;
-        overflow: hidden;
     }
 
     #cousor-ball {
@@ -22,6 +21,18 @@
         font-family: 'Noto Sans KR', sans-serif;
     }
 
+    .back_list {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 21;
+    border: 1px solid #000;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+}
+
     .swiper-slide {
         width: 36vw;
         height: 48vw;
@@ -30,8 +41,9 @@
 
     .years {
         left: -20vw;
-        top: 30%;
-        font-size: 2vw;
+        top: 34%;
+        font-size: 1.5vw;
+
     }
 
     .swiper-slide:first-child {
@@ -64,12 +76,12 @@
 
     .slide-title {
         right: -16vw;
-        font-size: 5vw;
+        font-size: 4vw;
         top: 38%;
     }
 
     .slide-stitle {
-        top: 68%;
+        top: 60%;
         right: -15vw;
     }
 
@@ -87,7 +99,83 @@
 
 
     }
+   .swiper-slide:first-child .text01 {
+        top: 56%;
+        transform: translateY(-100%);
+        font-size: 12vw;
+        font-weight: 900;
+        word-break: keep-all;
+        word-spacing: 0vw;
+    }
+
+    .swiper-slide:first-child .text02 {
+        transform: translateY(220%);
+        font-size:6.4vw;
+        font-weight: 700;
+        word-break: keep-all;
+    }
+    
+      .swiper-slide:nth-child(2) {
+        margin-left: 26vw;
+
+    }
+    
+   /* project_list */ 
+    
+    .project_title span {
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
 }
+
+.project_title h1 {
+    font-size: 8.8vw;
+    line-height: 0;
+    letter-spacing: 0.5vw;
+
+}
+
+.workbox_wrap {
+    float: right;
+    width: 75%;
+    text-align: right;
+
+}
+    .workbox_wrap ul li {
+    width: 62vw;
+    margin: 0 0 8vw 0vw;
+}
+    
+    .workbox_wrap ul li div {
+    width: 62vw;
+    height: 35vw;
+    box-sizing: content-box;
+}
+
+    
+    
+.workbox_wrap ul li p {
+    font-size: 2.5vw;
+    padding-top: 3px;
+}
+
+.workbox_wrap ul li span{
+    font-size: 2vw;
+
+}
+
+.workbox_wrap ul li div.vline {
+    height: 18px;
+    transform: translateY(8%)
+}
+    
+    
+    
+    
+}
+
+
+
+
 
 @media screen and (min-width:641px) and (max-width:768px) {
         .swiper-slide:first-child .text01 {
@@ -110,4 +198,27 @@
         margin-left: 26vw;
 
     }
+    
+
+    
+    /* project_list */ 
+
+.workbox_wrap ul li p {
+    font-size: 2.2vw;
+    padding-top: 2px;
 }
+
+.workbox_wrap ul li span{
+    font-size: 1.8vw;
+
+}
+
+.workbox_wrap ul li div.vline {
+    height: 11px;
+    transform: translateY(8%)
+}
+
+}
+
+
+
