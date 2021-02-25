@@ -88,11 +88,7 @@
 
     /* project_list */
     
-     .project_title {
-        position: absolute;
-        left: 20px;
 
-    }
 
     .project_title span {
         font-size: 3vw;
