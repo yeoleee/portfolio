@@ -330,6 +330,7 @@ main {
     letter-spacing: 0.5vw;
     writing-mode: vertical-rl;
     display: inline-block;
+height: 900px;
 }
 
 .workbox_wrap {
