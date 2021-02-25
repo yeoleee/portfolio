@@ -305,6 +305,7 @@ main {
 
 .project_title {
     float: left;
+    display: inline-block;
 }
 
 .project_title span {
@@ -331,6 +332,7 @@ main {
 
 .workbox_wrap {
     float: right;
+    display: inline-block;
     width: 75%;
     z-index: 1;
 }
