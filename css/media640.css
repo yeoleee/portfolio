@@ -105,19 +105,19 @@
 
     .workbox_wrap {
         float: right;
-        width: 67%;
+        width: 63%;
         text-align: left;
     }
 
     
     .workbox_wrap ul li {
-        width: 60vw;
+        width: 58vw;
         margin: 0 0 12vw 0vw;
     }
 
     .workbox_wrap ul li div {
-        width: 60vw;
-        height: 34vw;
+        width: 58vw;
+        height: 32vw;
     }
 
 
@@ -159,6 +159,10 @@
         word-break: keep-all;
     }
 
+    .project_title {
+    transform: translateX(-20%);
+}
+    
     .project_title span {
         font-size: 3.4vw;
         letter-spacing: 0.1vw;
@@ -166,19 +170,17 @@
 
     .workbox_wrap {
         float: right;
-        width: 68%;
-        text-align: center;
-        margin-left: 10px;
+        width: 64%;
 
     }
     
         .workbox_wrap ul li {
-        width: 58vw;
+        width: 56vw;
         margin: 0 0 12vw 0vw;
     }
 
     .workbox_wrap ul li div {
-        width: 58vw;
+        width: 56vw;
         height: 33vw;
     }
 
