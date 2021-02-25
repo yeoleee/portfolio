@@ -305,8 +305,6 @@ main {
 
 .project_title {
     float: left;
-    width: auto;
-    box-sizing: border-box;
 }
 
 .project_title span {
@@ -332,10 +330,8 @@ main {
 }
 
 .workbox_wrap {
-    position: relative;
     float: right;
     width: 75%;
-    text-align: right;
     z-index: 1;
 }
 
@@ -353,11 +349,6 @@ main {
     margin: 0 0 4vw 2vw;
     text-align: left;
     
-}
-
-.workbox_wrap a{
-    display: block;
-    width: 100%;
 }
 
 .workbox_wrap ul li p {
