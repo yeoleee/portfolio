@@ -177,10 +177,8 @@
     }
 
     .workbox_wrap {
-        display: inline-block;
-        position: absolute;
-        float: left;
-        width: auto;
+        float: right;
+        width: 70%;
         text-align: center;
         margin-left: 10px;
 
