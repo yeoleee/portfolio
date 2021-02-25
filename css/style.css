@@ -316,18 +316,20 @@ main {
     color: rgba(0, 0, 05, 1);
     letter-spacing: 0.1vw;
     writing-mode: vertical-rl;
+    display: inline-block;
 
 }
 
 .project_title h1 {
     float: left;
-    font-size: 6.6vw;
+    font-size: 5.9vw;
     font-weight: 900;
     color: rgba(255, 255, 255, 0);
     -webkit-text-stroke: 1.5px #000;
     line-height: 0;
     letter-spacing: 0.5vw;
     writing-mode: vertical-rl;
+    display: inline-block;
 }
 
 .workbox_wrap {
