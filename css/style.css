@@ -333,6 +333,7 @@ main {
 }
 
 .workbox_wrap {
+    position: relative;
     float: right;
     width: 76%;
     z-index: 1;
