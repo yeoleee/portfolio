@@ -197,6 +197,7 @@
 
     .workbox_wrap ul li div.vline {
         height: 2.5vw;
+        margin: 0 1.5vw;
         transform: translateY(9%)
     }
 

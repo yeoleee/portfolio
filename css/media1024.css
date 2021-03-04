@@ -144,7 +144,8 @@
 }
 
 .workbox_wrap ul li div.vline {
-    height: 18px;
+    height: 1.7vw;
+    margin: 0 1.2vw;
     transform: translateY(8%)
 }
     
@@ -203,6 +204,7 @@
 
 .workbox_wrap ul li div.vline {
     height: 15px;
+    margin: 0 1.4vw;
     transform: translateY(8%)
 }
 

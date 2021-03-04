@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <a href="index.html"><div class="back_list">리스트로<br>돌아가기</div></a>
+    <a href="index.html"><div class="back_list"><span>- back to list</span></div></a>
     <header>
         <a class="logo-position"><div>로고영역</div></a>
         <a href="http://www.naver.com" target="_blank" class="menu-position"><span><div></div>about</span></a>
@@ -37,13 +37,13 @@
                 <li>
                    <a href="http://www.naver.com" target="_blank">
                     <div>ㅇㅇ</div>
-                    <p>한국임업진흥원 포털사이트 리뉴얼 및 유지보수</p><span>참여인원 : 3명</span><div class="vline"></div><span>전체 레이아웃, 아이콘 작업</span>
+                    <p>한국임업진흥원 포털사이트 리뉴얼 및 유지보수</p><span>PC웹</span><div class="vline"></div><span>참여인원 : 3명</span><div class="vline"></div><span>Role : UI / Visual design 및 icon 디자인</span>
                     </a>
                 </li>
                 <li>
                    <a>
                     <div>ㅇㅇ</div>
-                    <p>해외산림정보서비스</p><span>개인 담당</span><div class="vline"></div><span>웹 페이지 전반 작업</span>
+                    <p>해외산림정보서비스</p><span>PC웹</span><div class="vline"></div><span>개인담당 -전체 UI</span>
                     </a>
                 </li>
                 <li>
@@ -89,6 +89,22 @@
         } else if (document.attachEvent) {
             document.attachEvent("onmousemove", resultFun); //attachEvent는 IE8이하와 오페라에서 사용하는 명령어이다 
         };
+        
+        $(function(){
+  var $header = $('header'); //헤더를 변수에 넣기
+  var $page = $('.workbox_wrap'); //색상이 변할 부분
+  var $window = $(window);
+  var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+  
+  $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+    pageOffsetTop = $page.offset().top;
+  });
+  
+  $window.on('scroll', function(){ //스크롤시
+    var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+    $header.toggleClass('down', scrolled); //클래스 토글
+  });
+});
     </script>
 
 
