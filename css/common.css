@@ -246,7 +246,7 @@ header {
             transform: translateY(-50%);
             width: 9.5vw;
             height: 3.5vw;
-            background: url(../../img/common/logo.gif) no-repeat center/ cover;
+            background: url(../img/common/logo.gif) no-repeat center/ cover;
         }
 
     .all_list{
