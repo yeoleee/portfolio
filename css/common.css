@@ -98,7 +98,7 @@ header {
     transform: translateY(-50%);
     width: 9.46vw;
     height: 3.53vw;
-    background: url(../../img/common/logo.gif) no-repeat center/ cover;  
+    background: url(../img/common/logo.gif) no-repeat center/ cover;  
 }
 
 .all_list{
