@@ -42,17 +42,19 @@
     .swiper-slide:first-child .text01 {
         position: absolute;
         bottom: 54%;
-        font-size: 6vw;
+        font-size: 7vw;
         padding-right: 40%;
     }
 
     .swiper-slide:first-child .text02 {
+        display: none;
+    }
+.typing {
         position: absolute;
         top: 50%;
-        font-size: 9vw;
+        font-size: 11vw;
         padding-right: 40%;
-    }
-
+}
     .swiper-slide:nth-child(2) {
         margin-left: -6%;
 
@@ -210,12 +212,14 @@
     }
 
     .swiper-slide:first-child .text02 {
+        display: none;
+    }
+    .typing {
         position: absolute;
         top: 50%;
-        font-size: 11vw;
+        font-size: 12vw;
         padding-right: 30%;
     }
-
 
     
     .swiper-slide:nth-child(2) {

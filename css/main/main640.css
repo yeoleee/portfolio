@@ -31,12 +31,16 @@
 }
 
 .swiper-slide:first-child .text02 {
-    position: absolute;
+display: none;
+}
+    
+    .typing{
+            position: absolute;
     top: 50%;
-    font-size: 11vw;
+    font-size: 12vw;
     padding-right: 30%;
     transform: translateY(10%);
-}
+    }
     
     .swiper-slide:nth-child(2) {
         margin-left: 0;
@@ -254,19 +258,21 @@
     .swiper-slide:first-child .text01 {
     position: absolute;
     bottom: 55%;
-    font-size: 8vw;
+    font-size: 9vw;
     padding-right: 20%;
     transform: translateY(-10%);
 }
 
 .swiper-slide:first-child .text02 {
-    position: absolute;
-    top: 43%;
-    font-size: 12vw;
-    padding-right: 20%;
-    transform: translateY(10%);
+display: none;
 }
-    
+    .typing{
+         position: absolute;
+    top: 45%;
+    font-size: 13vw;
+    padding-right: 20%;
+    transform: translateY(10%);   
+    }
     .swiper-slide:nth-child(2) {
         margin-left: 18vw;
     }
