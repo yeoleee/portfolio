@@ -204,6 +204,7 @@
             transform: translateY(-11.86vw);
             width: 100%;
             padding: 0;
+            overflow: hidden;
         }
 
         .detail_area ul {

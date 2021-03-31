@@ -428,6 +428,9 @@ body:active #cousor-ball, body:active #cousor-ball_b {
     opacity: 0;
 }
 
+.back_list:hover {
+    display: none;
+}
 
 
 }
