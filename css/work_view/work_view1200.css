@@ -560,6 +560,7 @@
             box-sizing: border-box;
             height: auto;
             text-align: left;
+            overflow: hidden;
         }
 
         .subheading {
