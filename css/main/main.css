@@ -389,7 +389,7 @@ a {
 
 .footer a {
     position: relative;
-    font-size: 1vw;
+    font-size: 1.1vw;
     line-height: 0;
 }
 
@@ -417,6 +417,12 @@ a {
         width: 24vw;
         height: 32vw;
     }
+    .footer a {
+    position: relative;
+    font-size: 1.4vw;
+    line-height: 0;
+}
+
 
 }
 
