@@ -150,6 +150,7 @@ body:active #cousor-ball, body:active #cousor-ball_b {
 
     .down {
         position: fixed;
+        top: 0;
         z-index: 2;
         background-color: rgba(17, 17, 17, 0.8);
         -webkit-transition-duration: 0.3s;
