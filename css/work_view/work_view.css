@@ -288,7 +288,8 @@ a {
 
 
 
-.contents_main {
+.contents_main,
+.etc_area {
     display: block;
     width: 1180px;
     margin: 0 auto;
@@ -500,33 +501,75 @@ a {
 }
 
 .visual_area {
-    padding-top: 40px;
     box-sizing: content-box;
+    
 }
 
 .visual_area img {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 10px 0;
+}
+
+.visual_area span{
+    color: #d4d4d4;
 }
 
 .expansion_area {
     display: block;
     width: 100%;
     height: auto;
-    background-color: #c9c9c9;
+    background-color: #d9d9d9;
     margin: 0;
     padding: 120px 0;
     box-sizing: border-box;
 }
 
 .expansion_area div {
-    width: 1180px;
-    background-color: #eee;
-    height: 1920px;
+    width: 980px;
     margin: 0 auto;
-
-
 }
+
+.expansion_area div img {
+    width: 100%;
+}
+
+.etc_area img {
+    width: 100%;
+    margin: 0 0 10vw 0;
+}
+
+.etc_area ul {
+    width: 100%;
+    margin: 0 0 4vw 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.etc_area ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.etc_area ul li{ float: left; padding: 1vw 2vw; box-sizing: border-box; }
+.etc_area ul li:only-child { width: 100%; }                          /* 노드가 하나일 때 선택 */
+.etc_area ul li:first-child:nth-last-child(2),                       /* 노드가 둘 일 때, 1번 노드 선택 */
+.etc_area ul li:first-child:nth-last-child(2)+li { width: 50%; }     /* 노드가 둘 일 때, 2번 노드 선택 */
+.etc_area ul li:first-child:nth-last-child(3),                       /* 노드가 셋 일 때, 1번 노드 선택 */
+.etc_area ul li:first-child:nth-last-child(3)~li { width: 33.33%; }  /* 노드가 셋 일 때, 2~3번째 노드 선택 */
+.etc_area ul li:first-child:nth-last-child(4),                       /* 노드가 넷 일 때, 1번 노드 선택 */
+.etc_area ul li:first-child:nth-last-child(4)~li { width: 25%; }     /* 노드가 넷 일 때, 2~4번째 노드 선택 */
+
+.etc_area ul li:first-child:nth-last-child(5),                       /* 노드가 넷 일 때, 1번 노드 선택 */
+.etc_area ul li:first-child:nth-last-child(5)~li { width: 20%; }     /* 노드가 넷 일 때, 2~4번째 노드 선택 */
+
+
+.etc_area ul li img{
+padding: 0;
+    margin: 0;
+}
+
 
 .contents_footer {
     display: block;
@@ -621,12 +664,19 @@ a {
 .contents_footer ul li:last-child div {
     padding: 30px 0 60px 0;
     box-sizing: border-box;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
+
+.pre_area:hover a ,
+.next_area:hover a {
+    opacity: 0.6;
+    
+}
 .pre_area2 {
     width: 50%;
     float: left;
+    letter-spacing: 1.2px;
 
 }
 
@@ -652,4 +702,41 @@ a {
     width: 590px;
     float: left;
     text-align: right;
+}
+
+.swiper-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #d9d9d9;
+    padding: 120px 0;
+    z-index: 2;
+}
+
+
+swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+.swiper-slide img{
+    width: 980px;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 2vw; 
 }

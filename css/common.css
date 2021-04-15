@@ -39,8 +39,6 @@ body:active #cousor-ball, body:active #cousor-ball_b {
     height: 28px;
 }
 
-
-
 #move_top_btn {
     position: fixed;
     right: 2%;
@@ -75,7 +73,6 @@ body:active #cousor-ball, body:active #cousor-ball_b {
     top: 50%;
     z-index: 9999;
     width: auto;
-    text-align: center;
     height: auto;
     transform: translateY(-50%);
 }
@@ -87,6 +84,7 @@ body:active #cousor-ball, body:active #cousor-ball_b {
     border-radius: 50%;
     transition: all linear 0.3s;
     transform: translateX(-50%);
+    
 
 }
 
@@ -98,12 +96,11 @@ body:active #cousor-ball, body:active #cousor-ball_b {
 
 .back_list span {
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 0;
     letter-spacing: 2px;
-    text-transform: uppercase;
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
@@ -117,6 +114,10 @@ body:active #cousor-ball, body:active #cousor-ball_b {
 .back_list:hover div img {
     opacity: 0;
     transition: all linear 0.3s;
+}
+
+.back_list:hover span {
+    font-weight: 800;
 }
 
 @media screen and (min-width: 1201px) {
@@ -150,7 +151,7 @@ body:active #cousor-ball, body:active #cousor-ball_b {
 
     .down {
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         background-color: rgba(17, 17, 17, 0.8);
         -webkit-transition-duration: 0.3s;
         -webkit-transition-timing-function: ease;
@@ -185,7 +186,9 @@ body:active #cousor-ball, body:active #cousor-ball_b {
         letter-spacing: 1.5px;
         line-height: 0;
     }
-
+    .all_list:hover{
+        color: rgba(255, 255, 255, 0.7);
+    }
     .all_list span {
         position: absolute;
         left: 50%;
@@ -205,6 +208,7 @@ body:active #cousor-ball, body:active #cousor-ball_b {
         animation-direction: normal;
         animation-fill-mode: none;
         animation-play-state: running;
+        
     }
     
     .menu-position {
