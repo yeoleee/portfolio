@@ -271,7 +271,7 @@ a {
     color: #666;
     font-weight: 500;
     line-height: 1;
-    text-transform: uppercase;
+
     writing-mode: vertical-lr;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -389,7 +389,7 @@ a {
 
 .footer a {
     position: relative;
-    font-size: 1.1vw;
+    font-size: 1vw;
     line-height: 0;
 }
 
