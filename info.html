@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <title>이임열 - Info</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/info.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+    <link href="https://fonts.googleapis.com/css2 family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="wow/animate.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="wow/wow.min.js"></script>
+    <script type="text/javascript" src="js/scrollspy.js"></script>
+
+</head>
+
+<body>
+    <script>
+        new WOW().init();
+
+    </script>
+
+    <div id="cousor-ball_b"></div>
+    <a id="move_top_btn" href="#"><img src="img/common/chevron-up.svg"></a>
+    <header>
+            <a href="index.html" class="logo-position">
+                <div></div>
+            </a>
+            <a href="index.html" class="menu-position">
+                <span>
+                    <div class="front_circle"></div>Work
+                </span>
+                <div class="hover_bg"></div>
+            </a>
+        </header>
+
+    <div id="introWrap">
+        <div class="back_front">
+            <!--<div class="circle_img"><img src="img/info/draw_circle.gif"></div>-->
+                       <canvas id="myCanvas" width="200" height="200"></canvas>
+                    <div class="circle_ani"></div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div class="contents_wrap">
+         dddddd
+        </div>
+    </div>
+    <script>
+        try {
+            // 인트로에서 메인 이동
+            var introWrapBurIndex = 0;
+            setTimeout(function() {
+                var introWrapBur = setInterval(function() {
+                    introWrapBurIndex = introWrapBurIndex + 1;
+
+                    if (introWrapBurIndex < 14) {
+                        $("#introWrap").css("filter", "blur(" + introWrapBurIndex + "px)");
+                        $("#introWrap").css("-ms-filter", "blur(" + introWrapBurIndex + "px)");
+                        $("#introWrap").css("-moz-filter", "blur(" + introWrapBurIndex + "px)");
+                        $("#introWrap").css("-webkit-filter", "blur(" + introWrapBurIndex + "px)");
+                    } else if (introWrapBurIndex == 14) {
+                        $("#introWrap").hide();
+                    } else if (introWrapBurIndex == 25) {
+                        clearInterval(introWrapBur);
+                        $("#wrap").fadeIn();
+                    }
+                }, 10);
+            }, 3500);
+        } catch (err) {
+            $("#introWrap").hide();
+            $("#wrap").show();
+        }
+
+        //cousor
+        $(document).mousemove(function(e) {
+            $('#cousor-ball_b').css("top", e.pageY);
+            $('#cousor-ball_b').css("left", e.pageX);
+        });
+        //header
+        $(function() {
+            var $header = $('header'); //헤더를 변수에 넣기
+            var $page = $('.contents_wrap'); //색상이 변할 부분
+            var $window = $(window);
+            var pageOffsetTop = $page.offset().top; //색상 변할 부분의 top값 구하기
+
+            $window.resize(function() { //반응형을 대비하여 리사이즈시 top값을 다시 계산
+                pageOffsetTop = $page.offset().top;
+            });
+
+            $window.on('scroll', function() { //스크롤시
+                var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+                $header.toggleClass('down', scrolled); //클래스 토글
+            });
+        });
+        //top-button
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $('#move_top_btn').fadeIn();
+                } else {
+                    $('#move_top_btn').fadeOut();
+                }
+            });
+
+            $('#move_top_btn').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+        
+
+  var ctx = document.querySelector('#myCanvas').getContext('2d');
+  var end = Math.PI * 2.2;
+  for (var i = 0; i < 100; i++) {
+    draw(i);
+  };
+ function draw(delay) {
+    setTimeout(function() {
+      ctx.clearRect(0, 0, 200, 200);
+      ctx.beginPath();
+      ctx.arc(100, 100, 50, 0, end / 100 * delay);
+      ctx.stroke();
+        ctx.strokeStyle = 'rgb(255, 255, 255)'
+    }, delay * 20);
+  };      
+    </script>
+    <script type="text/javascript" src="js/wowjs-repeat-animation.js"></script>
+
+</body>
+
+</html>
