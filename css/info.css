@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+@keyframes circle_zoom {
+    0%, 50%, 96%, 100% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -mox-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    background: url(../img/info/space.jpg) repeat 0% 0% / cover;
+    border-radius: 50%;
+    }
+    
+    0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    }
+    
+    30% {
+    width: 100px;
+    height: 100px;
+    opacity: 0.9;
+    }
+    
+    45% {
+    width: 110px;
+    height: 110px;
+    opacity: 1;
+    }
+    
+    96%{
+    width: 1920px;
+    height: 1920px;
+    }
+
+    100%{
+    width: 1920px;
+    height: 1920px;
+    }
+    
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-family: 'Noto Sans KR', 'AappleSDGothicNeo', sans-serif;
+    background: #111111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+        overflow-x: hidden;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    z-index: 10;
+}
+
+#introWrap {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: url(../img/info/forest.gif) no-repeat 0% 0% / cover;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.back_front {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.circle_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;   
+}
+
+#myCanvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.circle_img img{
+    width: 100%;
+}
+
+.circle_ani {
+    animation: circle_zoom;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+#wrap {
+ max-width: 1920px;
+ margin: 0 auto;
+}
+
+.contents_wrap {
+    display: block;
+    text-align: center;
+    height: 1920px;
+}
+
