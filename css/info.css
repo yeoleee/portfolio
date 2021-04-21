@@ -6,7 +6,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+-mox-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+        
+transform: translate(-50%, -50%);
     background: url(../img/info/space.jpg) repeat 0% 0% / cover;
     border-radius: 50%;
     }
