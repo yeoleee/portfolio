@@ -153,12 +153,6 @@ a {
 }
 
 
-.logo-position div {
-    background: url(../../img/common/logo.gif) no-repeat center/ cover;
-}
-
-
-
 .wrap {
     position: relative;
     max-width: 1920px;
