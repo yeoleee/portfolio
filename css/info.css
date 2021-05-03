@@ -460,7 +460,7 @@ li img {
    font-size: 11vw;
 }
 
-.slogan {
+.slogan, .back_forest > .slogan  {
     font-size: 6vw;
     margin-top:10vw;
 }
