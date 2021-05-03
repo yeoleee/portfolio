@@ -577,4 +577,14 @@ li img {
 }    
 
 }
-    
+
+
+
+@media screen and (max-width:500px){
+   
+    .slogan, .back_forest > .slogan  {
+    font-size: 26px;
+    margin-top:10vw;
+}
+
+}
