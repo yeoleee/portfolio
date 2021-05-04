@@ -460,11 +460,19 @@ li img {
    font-size: 11vw;
 }
 
-.slogan, .back_forest > .slogan  {
+
+.slogan {
     position: absolute;
     font-size: 6vw;
     margin-top:10vw;
 }
+
+.back_forest > .slogan {
+    position: absolute;
+    font-size: 6vw;
+    margin-top:10vw;
+}
+    
 
 .back_forest {
     width: 42vw;
