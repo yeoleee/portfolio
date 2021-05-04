@@ -24,6 +24,8 @@
     <script type="text/javascript" src="wow/wow.min.js"></script>
     <script type="text/javascript" src="js/scrollspy.js"></script>
 
+<link rel="shortcut icon" href="img/common/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/common/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -32,7 +34,7 @@
         new WOW().init();
     </script>
     <header>
-        <a class="logo-position">
+        <a href="index.html" class="logo-position">
             <div></div>
         </a>
         <a href="all_list.html" class="all_list"><span></span>View all list +</a>
@@ -49,7 +51,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
 
-                <span class="text01 wow fadeInUp" data-wow-duration="1.5s"> 이임열 Design Portfolio</span>
+                <span class="text01 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s"> 이임열 Design Portfolio</span>
                 <span class="text02">숲에서 우주를 보다.</span>
                 <span class="typing"></span>
 
@@ -64,12 +66,15 @@
             </div>
             <div class="swiper-slide" id="second_slide"> <a class="slide-area" href="work_view/01_kofpi.html">
                     <span class="years">2018 - 2020</span>
-                    <h1 class="slide-title">한국임업진흥원</h1>
+                    <h1 class="slide-title">한국임업진흥원
+                    <img src="img/common/wa.png" style="width:20px; vertical-align: top;">
+                    </h1>
                     <div class="slide-stitle">
                         <div class="h-line"></div>
                         <p>포털 리뉴얼 및<br>유지보수</p>
                     </div>
-                    <div class="slidebg"><img src="img/main/slide/forest.jpg"></div>
+                    <div class="slidebg">
+                    <img src="img/main/slide/forest.jpg"></div>
                 </a></div>
             <div class="swiper-slide"> <a class="slide-area" href="work_view/02_ofris.html">
                     <span class="years">2020</span>
@@ -190,13 +195,13 @@
 
 
         var typingBool = false;
-        var typingIdx = 0;
+        var typingIdx = -3;
         var typingTxt = $(".text02").text(); // 타이핑될 텍스트를 가져온다 
         typingTxt = typingTxt.split(""); // 한글자씩 자른다. 
         if (typingBool == false) { // 타이핑이 진행되지 않았다면 
             typingBool = true;
 
-            var tyInt = setInterval(typing, 150); // 반복동작 
+            var tyInt = setInterval(typing, 200); // 반복동작 
         }
 
         function typing() {
