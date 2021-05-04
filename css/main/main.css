@@ -330,10 +330,12 @@ a {
 .swiper-slide .slide-area .slidebg img {
     position: relative;
     width: 100%;
+    transition: 0.5s;
 }
 
 .swiper-slide .slide-area:hover .slidebg img {
     opacity: 0;
+    transition: 0.5s;
 }
 
 .swiper-slide:nth-child(2) .slide-area .slidebg {
