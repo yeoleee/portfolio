@@ -461,6 +461,7 @@ li img {
 }
 
 .slogan, .back_forest > .slogan  {
+    position: absolute;
     font-size: 6vw;
     margin-top:10vw;
 }
