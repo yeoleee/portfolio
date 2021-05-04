@@ -554,12 +554,16 @@ li img {
     position: absolute;
     font-size: 6vw;
     margin-top:10vw;
+    
+    animation: text_ani 10s linear infinite;
 }
 
 .back_forest > .slogan {
     position: absolute;
     font-size: 8vw;
     margin-top:10vw;
+    
+    animation: text_ani 10s linear infinite;
 }
   
     
