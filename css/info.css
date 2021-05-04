@@ -549,7 +549,19 @@ li img {
 .top_area {
     padding: 26vw 0;
 }
-   
+
+.slogan {
+    position: absolute;
+    font-size: 6vw;
+    margin-top:10vw;
+}
+
+.back_forest > .slogan {
+    position: absolute;
+    font-size: 6vw;
+    margin-top:10vw;
+}
+  
     
 .sub_text {
     width: 70%;
