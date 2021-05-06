@@ -141,8 +141,8 @@ body:active #cousor-ball_b {
     border-radius: 50%;
     transition: all linear 0.3s;
     transform: translateX(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 
 
 }
