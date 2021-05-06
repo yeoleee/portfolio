@@ -316,6 +316,7 @@ a {
     font-weight: 700;
     color: rgba(255, 255, 255, 0);
     -webkit-text-stroke: 1.5px #fff;
+    -ms-text-stroke: 1.5px #fff;
     line-height: 1;
     word-break: keep-all;
     margin: 0 0 0 1.2vw;
