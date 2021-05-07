@@ -349,6 +349,8 @@ a {
     line-height: 1;
 
     writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
