@@ -326,7 +326,7 @@ body:active #cousor-ball_b {
         display: table-cell;
         vertical-align: middle;
     }
-
+    
     .front_circle {
         background-color: rgba(0, 175, 102, 1);
         width: 12px;
@@ -354,8 +354,8 @@ body:active #cousor-ball_b {
         opacity: 0;
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     }
-
-    .menu-position:hover .front_circle {
+    
+        .menu-position:hover .front_circle {
         margin-right: 0;
         opacity: 0;
         transition: 0.5s;
@@ -373,8 +373,7 @@ body:active #cousor-ball_b {
         opacity: 1;
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     }
-
-
+    
 }
 
 @media screen and (max-width: 1400px) {
@@ -463,24 +462,6 @@ body:active #cousor-ball_b {
         opacity: 0;
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     }
-
-    .menu-position:hover .front_circle {
-        margin-right: 0;
-        opacity: 0;
-        transition: 0.5s;
-    }
-
-    .menu-position:hover .hover_bg {
-        width: 40px;
-        height: 40px;
-        right: 40%;
-        transform: translate(50%, -50%);
-                -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-        opacity: 1;
-        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-
 
 }
 
