@@ -287,7 +287,7 @@ a {
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.slide-area:hover .slidebg {
+.swiper-slide:hover .slidebg {
     transform: scale3d(1.04, 1.04, 1.04) rotateX(2deg) rotateY(-15deg);
     -webkit-transform: scale3d(1.04, 1.04, 1.04) rotateX(2deg) rotateY(-15deg);
     -ms-transform: scale3d(1.04, 1.04, 1.04) rotateX(2deg) rotateY(-15deg);
@@ -411,7 +411,7 @@ a {
     transition: 0.5s;
 }
 
-.swiper-slide .slide-area:hover .slidebg img {
+.swiper-slide:hover .slidebg img {
     opacity: 0;
     transition: 0.5s;
 }
