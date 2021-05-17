@@ -267,7 +267,7 @@ a {
     height: 28vw;
     transition-property: transform;
     margin-left: 24vw;
-
+    z-index: 10;
 }
 
 
