@@ -295,8 +295,8 @@ a {
 }
 
 
-.slide-area:hover .slide-title,
-.slide-area:hover .slide-stitle {
+.swiper-slide:hover .slide-title,
+.swiper-slide:hover .slide-stitle {
     transform: scale3d(1.04, 1.04, 1.04);
     -webkit-transform: scale3d(1.04, 1.04, 1.04);
     -ms-transform: scale3d(1.04, 1.04, 1.04);
@@ -354,7 +354,7 @@ a {
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.slide-area:hover .years {
+.swiper-slide:hover .years {
     top: -6%;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
