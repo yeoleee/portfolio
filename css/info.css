@@ -183,7 +183,6 @@ section {
 
 
 .back_forest > .slogan {
-    position: absolute;
     color: #00fa66;
     mix-blend-mode: soft-light;
 
@@ -464,6 +463,7 @@ li img {
 .slogan {
     font-size: 6vw;
     margin-top:10vw;
+    animation: text_ani 15s linear infinite;
 }
 
     
