@@ -142,7 +142,6 @@ body:active #cousor-ball_b {
     transition: all linear 0.3s;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
 
 
 }
@@ -326,7 +325,7 @@ body:active #cousor-ball_b {
         display: table-cell;
         vertical-align: middle;
     }
-    
+
     .front_circle {
         background-color: rgba(0, 175, 102, 1);
         width: 12px;
@@ -345,15 +344,19 @@ body:active #cousor-ball_b {
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        right: 100%;
+        right: 40%;
         top: 54%;
-        transform: translate(100%, -50%);
-        -webkit-transform: translate(100%, -50%);
-        -ms-transform: translate(100%, -50%);
+        transform: translate3d(50%, -50%, 0);
+        -webkit-transform: translate3d(50%, -50%, 0);
+        -mox-transform: translate3d(50%, -50%, 0);
+        -ms-transform: translate3d(50%, -50%, 0);
+        -o-transform: translate3d(50%, -50%, 0);
         z-index: -20;
         opacity: 0;
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     }
+
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -427,25 +430,8 @@ body:active #cousor-ball_b {
         transition: 0.5s;
     }
 
-    .hover_bg {
-        position: absolute;
-        background-color: rgba(0, 175, 102, 1);
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        right: 100%;
-        top: 54%;
-        transform: translate(100%, -50%);
-                -webkit-transform: translate(100%, -50%);
-        -ms-transform: translate(100%, -50%);
-        z-index: -20;
-        opacity: 0;
-        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-    }
 
 }
-
-
 @media screen and (min-width: 1200px) {
     
     .menu-position:hover .front_circle {
@@ -457,17 +443,10 @@ body:active #cousor-ball_b {
     .menu-position:hover .hover_bg {
         width: 40px;
         height: 40px;
-        right: 40%;
-        -webkit-transform: translate3d(50%, -50%, 0);
-        -mox-transform: translate3d(50%, -50%, 0);
-        -ms-transform: translate3d(50%, -50%, 0);
-        -o-transform: translate3d(50%, -50%, 0);
-        transform: translate3d(50%, -50%, 0);
         opacity: 1;
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     }
 }
-
 @media screen and (max-width: 780px) {
 
     .mark_img {
