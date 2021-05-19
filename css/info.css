@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+
 @keyframes up {
     0% {
         transform: translate(-50%, 200%);
@@ -182,6 +183,7 @@ section {
 
 
 .back_forest > .slogan {
+    position: absolute;
     color: #00fa66;
     mix-blend-mode: soft-light;
 
@@ -459,20 +461,13 @@ li img {
    font-size: 11vw;
 }
 
-
 .slogan {
     position: absolute;
     font-size: 6vw;
     margin-top:10vw;
 }
 
-.back_forest > .slogan {
-    position: absolute;
-    font-size: 6vw;
-    margin-top:10vw;
-}
     
-
 .back_forest {
     width: 42vw;
     height: 86vw;
@@ -548,23 +543,7 @@ li img {
 .top_area {
     padding: 26vw 0;
 }
-
-.slogan {
-    position: absolute;
-    font-size: 6vw;
-    margin-top:10vw;
-    
-    animation: text_ani 10s linear infinite;
-}
-
-.back_forest > .slogan {
-    position: absolute;
-    font-size: 8vw;
-    margin-top:10vw;
-    
-    animation: text_ani 10s linear infinite;
-}
-  
+     
     
 .sub_text {
     width: 70%;
