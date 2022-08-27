@@ -151,7 +151,7 @@
         }
 
         .subheading {
-            font-size: 1.8vw;
+            font-size: 2.5vw;
             margin-top: 8vw;
         }
 
@@ -480,6 +480,40 @@
 
     }
 
+    @media screen and (max-width:920px) {
+
+        .ol_area02 {
+            margin-top: 20px;
+        }
+
+        .overview_ol {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .overview_ol li {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .overview_ol li:first-child {
+            margin-top: 0;
+        }
+
+        .ol_circle span {
+            font-size: 12px;
+        }
+        .pc_br {
+            display: none;
+        }
+        
+        .small_txt span {
+            word-break: keep-all;
+            font-size: 14px;
+        }
+
+
+    }
 
     @media screen and (max-width:640px) {
 
