@@ -288,7 +288,7 @@ a {
 }
 
 .swiper-slide:hover .slidebg {
-    opacity: 1;
+    opacity: 0.8;
     transform: scale3d(1.04, 1.04, 1.04) rotateX(2deg) rotateY(-15deg);
     -webkit-transform: scale3d(1.04, 1.04, 1.04) rotateX(2deg) rotateY(-15deg);
     -ms-transform: scale3d(1.04, 1.04, 1.04) rotateX(2deg) rotateY(-15deg);
@@ -419,6 +419,11 @@ a {
 
 .swiper-slide:nth-child(2) .slide-area .slidebg {
     background: url(../../img/main/slide/alock.gif) no-repeat center center;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(3) .slide-area .slidebg {
+    background: url(../../img/main/slide/mmg.gif) no-repeat center center;
     background-size: cover;
 }
 

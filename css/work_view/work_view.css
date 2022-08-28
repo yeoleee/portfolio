@@ -240,6 +240,7 @@ a {
     text-align: left;
 }
 
+
 .link_button {
     position: relative;
     width: 300px;
@@ -306,6 +307,7 @@ a {
     font-size: 17px;
     font-weight: 300;
     color: #d4d4d4;
+    word-break: keep-all;
 
 }
 
@@ -557,6 +559,30 @@ a {
 .visual_area span{
     color: #d4d4d4;
 }
+
+.img_ol {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.img_ol_li {
+    box-sizing: content-box;
+}
+
+.img_ol_li img {
+    max-width: 120px;
+}
+
+
+.img_ol_li4 img {
+    max-width: 100px;
+}
+
 
 .expansion_area {
     display: block;

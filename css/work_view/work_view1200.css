@@ -518,6 +518,7 @@
     @media screen and (max-width:640px) {
 
 
+
         .contents_header {
             position: relative;
             display: inline-block;
@@ -885,7 +886,18 @@
             font-weight: 500;
             font-size: 2.4vw;
         }
+
+
+        .img_ol {
+            justify-content:baseline;
+            gap: 10px;
+        }
+
+        .img_ol li {
+            width: 30%;
+        }
     }
+
 
     @media screen and (max-width:500px) {
 
@@ -921,6 +933,14 @@
         
         .contents_footer ul li:last-child div {
             padding: 2.54vw 0 28vw 0;
+        }
+
+        .img_ol {
+            justify-content:baseline;
+        }
+
+        .img_ol li {
+            width: 50%;
         }
 
 
