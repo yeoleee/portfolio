@@ -641,6 +641,10 @@ padding: 0;
     margin: 0;
 }
 
+iframe {
+    width: 100%;
+}
+
 
 .contents_footer {
     display: block;
