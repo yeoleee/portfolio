@@ -254,16 +254,18 @@ section {
     padding: 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .middle_area ul li {
-    display: inline-block;
     height: auto;
-    vertical-align: top;
-    margin-right: 3.6%;
     font-size: 1.1vw;
     font-weight: 300;
-    padding-right: 1.2vw;
+}
+
+.middle_area ul li:first-child {
+    display: flex;
+    flex-direction: column;
 }
 
 .middle_area ul li:last-child {
@@ -418,11 +420,15 @@ li img {
 .middle_area div {
     font-size: 3.4vw;
 }
+
+.middle_area ul {
+    flex-direction: column;
+}
     
 .middle_area ul li {
-    font-size: 2.3vw;
+    font-size: 1.5vw;
     display: block;
-    margin: 6vw 0;
+    margin: 3.5vw 0;
     padding: 0;
 }
     
@@ -504,11 +510,11 @@ li img {
     
 .middle_area ul li {
     font-size: 4vw;
-    margin: 12vw 0;
+    margin: 5vw 0;
 }
     
 .middle_area ul li span {
-    font-size: 3.6vw;
+    font-size: 2vw;
     line-height: 2;
      word-break: keep-all;
         
@@ -516,9 +522,8 @@ li img {
 
     
 .middle_area ul li .years{
-    font-size: 2.85vw;
     letter-spacing: 0;
-    padding-right: 10px;
+    padding-right: 8px;
 }
     
 li img {
@@ -568,14 +573,14 @@ li img {
 }
 
 .middle_area ul li span {
-    font-size: 3.6vw;
+    font-size: 2.4vw;
     line-height: 2;
     word-break: keep-all;
         
 }
   
 .middle_area ul li .years{
-    font-size: 3.4vw;
+    font-size: 2.4vw;
     letter-spacing: 0;
     padding-right: 10px;
 }    
